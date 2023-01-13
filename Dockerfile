@@ -4,4 +4,4 @@ RUN pip install -r reguirements.txt
 RUN mkdir /app
 WORKDIR /app
 COPY rocky .
-ENTRYPOINT [ "python", "manage.py", "runserver" ]
+ENTRYPOINT [ "python", "manage.py", "runserver", "0:8000" ]
